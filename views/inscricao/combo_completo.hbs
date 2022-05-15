@@ -1,0 +1,64 @@
+<div class="col-12 col-md-4 p-2 p-lg-4">
+    <div class="card card-special rounded-0 border-0">
+        <div class="card-body p-0">
+            <div class="heading  text-center p-3">
+                <h4 class="text-white mb-0">
+                    Combo Completo
+                </h4>
+            </div>
+            <div class="info p-3">
+                <div class="price-figure text-center">
+                    <span class="currency">R$</span> <span class="number">265</span>
+                </div>
+                <div class="desc px-3">
+                    O Combo Completo inclui <strong>todos os itens da inscrição básica</strong>, além de:
+
+                    <ul class="offers-list list-unstyled d-inline-block mx-auto text-start">
+                        
+                        {{> 
+                            inscricao/modelo
+                            icone="fa fa-bread-slice"
+
+                            descricao="02 Cafés da Manhã"
+                            valor="20"
+                        }}
+                        
+                        {{> 
+                            inscricao/modelo
+                            icone="fa fa-utensils"
+
+                            descricao="02 Almoços"
+                            valor="40"
+                        }}
+
+                        {{> 
+                            inscricao/modelo
+                            icone="fa fa-fish"
+
+                            descricao="02 Jantares"
+                            valor="30"
+                        }}
+
+                        {{> 
+                            inscricao/modelo
+                            icone="fa fa-bed"
+
+                            descricao="Hospedagem Econômica"
+                            valor="100"
+                        }}
+                    </ul> 
+
+                </div>
+            </div><!--//info-->
+        </div><!--//card-body-->
+        <div class="card-footer text-center">
+            <a 
+                href="https://www.even3.com.br/miqueias2022/" 
+                target="_blank" 
+                class="btn btn-primary"
+            >
+                Inscreva-se Já!
+            </a>
+        </div>
+    </div><!--//card-->
+</div><!--//col-->
