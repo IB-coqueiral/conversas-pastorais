@@ -1,0 +1,36 @@
+<div class=
+    {{#if palestrante}} 
+        "item item-talk"
+    {{else}} 
+        "item item-other"
+    {{/if}}
+>
+    <div class="meta">
+        <h4 class="time mb-3">
+            {{horario}}
+        </h4>
+        {{#if palestrante}}
+            <div class="profile">
+                <a href="#modal-palestrante-{{base}}" data-bs-toggle="modal" data-bs-target="#modal-palestrante-{{base}}">
+                    <img class="profile-image rounded-circle  mb-2" src="/images/pessoas/palestrantes/{{base}}.jpg" alt="">
+                </a>
+                <div class="name">
+                    <a class="theme-link" href="#modal-palestrante-{{base}}" data-bs-toggle="modal" data-bs-target="#modal-palestrante-{{base}}">
+                        {{palestrante}}
+                    </a>
+                </div>
+            </div><!--//profile-->
+        {{/if}}
+    </div><!--//meta-->
+    <div class="content">
+        <h3 class="title mb-3">
+            {{titulo}}
+        </h3>
+        <div class="location mb-3">
+            <i class="fas fa-map-marker-alt me-2"></i>{{local}}
+        </div>
+        <div class="desc">
+            {{descricao}}
+        </div>
+    </div><!--//content-->
+</div><!--//item-->
