@@ -1,0 +1,120 @@
+<div class="col-6 col-lg-3 mb-4">
+    <div class="card rounded-0">
+        <a 
+            href="#modal-palestrante-{{base}}" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modal-palestrante-{{base}}"
+        >
+            <img src="/images/pessoas/palestrantes/{{base}}.jpg" class="card-img-top rounded-0" alt="">
+        </a>
+        <div class="card-body">
+            <h5 class="card-title mb-2">
+                {{nome}}
+            </h5>
+            <div class="card-text mb-3">
+                <div class="meta">
+                    {{funcao}}
+                </div>
+                <div class="meta">
+                    {{organizacao}}
+                </div>
+            </div><!--//card-text-->
+            <a 
+                href="#modal-palestrante-{{base}}" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modal-palestrante-{{base}}"
+            >
+                Um pouco mais &rarr;
+            </a>
+        </div><!--//card-->
+        <div class="card-footer text-muted">
+            <ul class="social-list list-inline mb-0">
+                
+                {{#if site}}
+                    <li class="list-inline-item">
+                        <a href="{{site}}" target="_blank"><i class="fas fa-link fa-fw"></i></a>
+                    </li>
+                {{/if}}
+                
+                {{#if facebook}}
+                    <li class="list-inline-item">
+                        <a href="{{facebook}}" target="_blank"><i class="fab fa-facebook-square fa-fw"></i></a>
+                    </li>
+                {{/if}}
+
+                {{#if instagram}}
+                    <li class="list-inline-item">
+                        <a href="{{instagram}}" target="_blank"><i class="fab fa-instagram-square fa-fw"></i></a>
+                    </li>
+                {{/if}}
+
+                {{#if twitter}}
+                    <li class="list-inline-item">
+                        <a href="{{twitter}}" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+                    </li>
+                {{/if}}
+
+            </ul><!--//social-list-->
+        </div>
+    </div><!--//card-->
+</div><!--//col-->
+
+<!-- Modal Speaker -->
+<div class="modal modal-speaker modal-speaker-1" id="modal-palestrante-{{base}}" tabindex="-1" role="dialog" aria-labelledby="palestrante-{{base}}-ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 id="palestrante-{{base}}-ModalLabel" class="modal-title sr-only">
+                    {{nome}}
+                </h4>
+            </div>
+            <div class="modal-body p-0">
+                <div class="theme-bg-light p-5">
+                    <div class="row">
+                        <div class="col-12 col-md-auto text-center">
+                            <img class="profile-image mb-3 mb-md-0 me-md-4 rounded-circle mx-auto" src="/images/pessoas/palestrantes/{{base}}.jpg" alt="" />
+                        </div>
+                        
+                        <div class="col text-center text-md-start mx-auto">
+                            <h2 class="name mb-2">{{nome}}</h2>
+                            <div class="meta">{{funcao}}</div>
+                            <div class="meta mb-2">{{organizacao}}</div>
+                            <ul class="social-list list-inline mb-0">								
+
+                                {{#if site}}
+                                    <li class="list-inline-item">
+                                        <a href="{{site}}" target="_blank"><i class="fas fa-link fa-fw"></i></a>
+                                    </li>
+                                {{/if}}
+                                
+                                {{#if facebook}}
+                                    <li class="list-inline-item">
+                                        <a href="{{facebook}}" target="_blank"><i class="fab fa-facebook-square fa-fw"></i></a>
+                                    </li>
+                                {{/if}}
+
+                                {{#if instagram}}
+                                    <li class="list-inline-item">
+                                        <a href="{{instagram}}" target="_blank"><i class="fab fa-instagram-square fa-fw"></i></a>
+                                    </li>
+                                {{/if}}
+
+                                {{#if twitter}}
+                                    <li class="list-inline-item">
+                                        <a href="{{twitter}}" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+                                    </li>
+                                {{/if}}
+                            </ul><!--//social-list--> 
+                        </div><!--//col-->
+                    </div><!--//row-->
+                </div>
+                <div class="desc p-4 p-lg-5">
+                    <p>
+                        {{minibio}}
+                    </p>
+                </div>
+            </div><!--//modal-body-->
+        </div><!--//modal-content-->
+    </div><!--//modal-dialog-->
+</div><!--//modal-->
