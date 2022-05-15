@@ -11,10 +11,18 @@
                     <span class="currency">R$</span> <span class="number">265</span>
                 </div>
                 <div class="desc px-3">
-                    O Combo Completo inclui <strong>todos os itens da inscrição básica</strong>, além de:
+                    <p class="pt-4">O Combo Completo inclui:</p>
 
-                    <ul class="offers-list list-unstyled d-inline-block mx-auto text-start">
+                    <ul class="offers-list list-unstyled d-inline-block mx-auto text-start w-100">
                         
+                        {{> 
+                            inscricao/modelo
+                            icone="fa fa-ticket-alt"
+
+                            descricao="Itens da Inscrição Básica"
+                            valor="75"
+                        }}
+
                         {{> 
                             inscricao/modelo
                             icone="fa fa-bread-slice"
@@ -55,9 +63,9 @@
             <a 
                 href="https://www.even3.com.br/miqueias2022/" 
                 target="_blank" 
-                class="btn btn-primary"
+                class="btn btn-secondary btn-lg"
             >
-                Inscreva-se Já!
+                Fazer Inscrição
             </a>
         </div>
     </div><!--//card-->
