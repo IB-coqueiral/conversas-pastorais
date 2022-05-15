@@ -12402,7 +12402,7 @@ a.theme-link:hover {
 .btn-primary:focus,
 .btn-primary:active {
 	text-decoration: none;
-	background: #076c9e;
+	background: #14C362;
 	box-shadow: none;
 	color: #fff
 }
@@ -12473,7 +12473,7 @@ a.theme-link:hover {
 }
 
 #topcontrol:hover {
-	background: #076c9e;
+	background: #14C362;
 	color: #fff
 }
 
