@@ -19,38 +19,40 @@
                     {{organizacao}}
                 </div>
             </div><!--//card-text-->
-            {{!-- <a 
+            {{#if minibio}}
+            <a 
                 href="#modal-palestrante-{{base}}" 
                 data-bs-toggle="modal" 
                 data-bs-target="#modal-palestrante-{{base}}"
             >
                 Um pouco mais &rarr;
-            </a> --}}
+            </a> 
+            {{/if}}
         </div><!--//card-->
         <div class="card-footer text-muted">
             <ul class="social-list list-inline mb-0">
                 
                 {{#if site}}
                     <li class="list-inline-item">
-                        <a href="{{site}}" target="_blank"><i class="fas fa-link fa-fw"></i></a>
+                        <a href="{{site}}" target="_blank"><i class="fas fa-link fa-lg"></i></a>
                     </li>
                 {{/if}}
                 
                 {{#if facebook}}
                     <li class="list-inline-item">
-                        <a href="{{facebook}}" target="_blank"><i class="fab fa-facebook-square fa-fw"></i></a>
+                        <a href="{{facebook}}" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
                     </li>
                 {{/if}}
 
                 {{#if instagram}}
                     <li class="list-inline-item">
-                        <a href="{{instagram}}" target="_blank"><i class="fab fa-instagram-square fa-fw"></i></a>
+                        <a href="{{instagram}}" target="_blank"><i class="fab fa-instagram-square fa-lg"></i></a>
                     </li>
                 {{/if}}
 
                 {{#if twitter}}
                     <li class="list-inline-item">
-                        <a href="{{twitter}}" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+                        <a href="{{twitter}}" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
                     </li>
                 {{/if}}
 
@@ -60,7 +62,7 @@
 </div><!--//col-->
 
 <!-- Modal Speaker -->
-<!--<div class="modal modal-speaker modal-speaker-1" id="modal-palestrante-{{base}}" tabindex="-1" role="dialog" aria-labelledby="palestrante-{{base}}-ModalLabel" aria-hidden="true">
+<div class="modal modal-speaker modal-speaker-1" id="modal-palestrante-{{base}}" tabindex="-1" role="dialog" aria-labelledby="palestrante-{{base}}-ModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -84,25 +86,25 @@
 
                                 {{#if site}}
                                     <li class="list-inline-item">
-                                        <a href="{{site}}" target="_blank"><i class="fas fa-link fa-fw"></i></a>
+                                        <a href="{{site}}" target="_blank"><i class="fas fa-link fa-lg"></i></a>
                                     </li>
                                 {{/if}}
                                 
                                 {{#if facebook}}
                                     <li class="list-inline-item">
-                                        <a href="{{facebook}}" target="_blank"><i class="fab fa-facebook-square fa-fw"></i></a>
+                                        <a href="{{facebook}}" target="_blank"><i class="fab fa-facebook-square fa-lg"></i></a>
                                     </li>
                                 {{/if}}
 
                                 {{#if instagram}}
                                     <li class="list-inline-item">
-                                        <a href="{{instagram}}" target="_blank"><i class="fab fa-instagram-square fa-fw"></i></a>
+                                        <a href="{{instagram}}" target="_blank"><i class="fab fa-instagram-square fa-lg"></i></a>
                                     </li>
                                 {{/if}}
 
                                 {{#if twitter}}
                                     <li class="list-inline-item">
-                                        <a href="{{twitter}}" target="_blank"><i class="fab fa-twitter fa-fw"></i></a>
+                                        <a href="{{twitter}}" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
                                     </li>
                                 {{/if}}
                             </ul> 
@@ -117,4 +119,4 @@
             </div>
         </div>
     </div>
-</div>-->
+</div>

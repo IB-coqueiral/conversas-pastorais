@@ -12422,7 +12422,7 @@ a.theme-link:hover {
 .btn-secondary:active,
 .btn-secondary:not(:disabled):not(.disabled):active:focus {
 	text-decoration: none;
-	background: #e73830;
+	background: #1c7b44;
 	box-shadow: none;
 	color: #fff
 }
@@ -12635,7 +12635,7 @@ a.theme-link:hover {
 
 .stats-block .unit {
 	font-size: 1.5rem;
-	color: rgba(0, 0, 0, 0.6)
+	color: rgba(255, 255, 255, .8)
 }
 
 .countdown-box span {
