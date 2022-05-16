@@ -12912,8 +12912,8 @@ a.theme-link:hover {
 
 .venue-section .figure.figure-1 {
 	z-index: 1;
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1)
+	-webkit-transform: scale(1);
+	transform: scale(1)
 }
 
 .venue-section .figure.figure-2 {
@@ -12931,8 +12931,8 @@ a.theme-link:hover {
 
 .venue-section .figure.figure-4 {
 	z-index: 3;
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1)
+	-webkit-transform: scale(1);
+	transform: scale(1)
 }
 
 .venue-section .grid-item {
